@@ -47,7 +47,7 @@ shell_exec("tesseract mg.png bypass -l eng --oem 3 --oem 0 --psm 4 --psm 5 --psm
 /*hasil dari membaca tulisan*/
 $captcha = file_get_contents('captcha.txt');
 
-/*Menghilangkan Enter di file text"/
+/*Menghilangkan Enter di file text*/
 $respon = trim(str_replace("\n","",$captcha));
 
 /*cek hasil respon*/
