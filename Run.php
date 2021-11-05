@@ -44,7 +44,7 @@ shell_exec("convert img.png -threshold 70% -gravity Center -crop 250x142+0+10 +r
 /*Membaca text di file mg.png*/
 shell_exec("tesseract mg.png captcha -l eng --oem 3 --oem 0 --psm 4 --psm 5 --psm 6 --dpi 800 -c tessedit_char_whitelist=abcdefghijklmnopqrstuvwxyz");
 
-/*hasil dari membaca tulisan*/
+/*Mengambil text*/
 $captcha = file_get_contents('captcha.txt');
 
 /*Menghilangkan Enter di file text*/
